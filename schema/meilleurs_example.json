@@ -1,0 +1,10 @@
+{
+	"type": "apartment",
+	"city": "Levallois-Perret",
+	"postal_code": "92300",
+	"price": {
+		"lowest": 5658,
+		"average": 7545,
+		"highest": 11317
+	}
+}

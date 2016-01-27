@@ -1,0 +1,33 @@
+{
+	"title": "Meilleurs Schema",
+	"type": "object",
+	"properties": {
+		"type": {
+			"type": "string"
+		},
+		"city": {
+			"type": "string"
+		},
+		"postal_code": {
+			"type": "string"
+		},
+		"price": {
+			"type": "objct",
+			"properties": {
+				"lowest": {
+					"type": "integer",
+					"minimum": 0
+				},
+				"average": {
+					"type": "integer",
+					"minimum": 0
+				},
+				"highest": {
+					"type": "integer",
+					"minimum": 0
+				}
+			}
+		}
+	},
+	"required": ["type", "city", "postal_code", "lowest", "average", "highest"]
+}
