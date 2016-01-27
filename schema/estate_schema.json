@@ -1,0 +1,43 @@
+{
+	"title": "Leboncoin Schema",
+	"type": "object",
+	"properties": {
+		"url": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"property": {
+			"type": "object",
+			"properties": {
+				"price": {
+					"type": "integer",
+					"minimum": 0
+				},
+				"type": {
+					"type": "string"
+				},
+				"area": {
+					"type": "integer",
+					"minimum": 0
+				},
+				"rooms": {
+					"type": "integer"
+				},
+				"location": {
+					"type": "object",
+					"properties": {
+						"city": {
+							"type": "string"
+						},
+						"postal_code": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	"required": ["url", "title", "price", "type", "rooms", "city", "postal_code"]
+}

@@ -1,0 +1,14 @@
+{
+	"url": "http://www.leboncoin.fr/ventes_immobilieres/915700197.htm?ca=12_s",
+	"title": "Appartement 2 pièces 32 m²",
+	"property": {
+		"price": 275000,
+		"type": "apartment",
+		"area": 32,
+		"rooms": 2,
+		"location": {
+			"city": "Levallois-Perret",
+			"postal_code": "92300"
+		}
+	}
+}
