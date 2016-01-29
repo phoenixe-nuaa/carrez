@@ -1,0 +1,23 @@
+{
+  "name": "carrez",
+  "version": "0.0.1",
+  "description": "> node.js workshop based on real estate",
+  "main": "app.js",
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "jsdom": "^8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoenixe-nuaa/carrez.git"
+  },
+  "author": "phoenixe",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/phoenixe-nuaa/carrez/issues"
+  },
+  "homepage": "https://github.com/phoenixe-nuaa/carrez#readme"
+}
