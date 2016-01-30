@@ -1,8 +1,10 @@
 {
-	"type": "apartment",
+	"type": "Appartemnet",
 	"city": "Levallois-Perret",
 	"postal_code": "92300",
-	"price": {
+	"price_per_m2": 8593.75,
+	"good_deal": false,
+	"reference_price": {
 		"lowest": 5658,
 		"average": 7545,
 		"highest": 11317

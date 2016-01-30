@@ -3,7 +3,7 @@
 	"title": "Appartement 2 pièces 32 m²",
 	"property": {
 		"price": 275000,
-		"type": "apartment",
+		"type": "Appartement",
 		"area": 32,
 		"rooms": 2,
 		"location": {

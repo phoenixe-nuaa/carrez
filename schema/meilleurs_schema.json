@@ -11,7 +11,13 @@
 		"postal_code": {
 			"type": "string"
 		},
-		"price": {
+		"price_per_m2": {
+			"type": "number"
+		},
+		"good_deal": {
+			"type": "boolean"
+		},
+		"reference_price": {
 			"type": "objct",
 			"properties": {
 				"lowest": {
