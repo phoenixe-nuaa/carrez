@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Loi Carrez</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+	<link rel="stylesheet" href="/css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
-	<h1>Loi Carrez</h1>
-	<div class="container">
-		<input type="text" name="url" id="url" value="http://www.leboncoin.fr/ventes_immobilieres/915700197.htm?ca=12_s">
-		<button id="compute">Compute</button>
-		<div id="result"></div>
+	<div class="ui container">
+		<div class="ui center aligned grid">
+			<div class="eight wide column">
+				<h1 class="ui blue header">
+					<div class="content">
+						Loi Carrez
+					</div>
+				</h1>
+				<div class="ui action left icon input">
+					<i class="home icon"></i>
+					<input type="text" value="http://www.leboncoin.fr/ventes_immobilieres/915700197.htm?ca=12_s" placeholder="Enter the url" id="url">
+					<div class="ui blue button" id="compute">Evaluate</div>
+			    </div>
+			</div>
+		</div>
+		<div class="ui center aligned grid">
+			<div class="ui eight wide column" id="result" style="display:none">
+				<div class="ui message" id="answer">Answer</div>
+				<table class="ui celled table" id="values">
+					<tbody>
+						<tr>
+							<td>Location</td>
+							<td>Levallois-Perret</td>
+						</tr>
+						<tr>
+							<td>Type</td>
+							<td>Appartemnet</td>
+						</tr>
+						<tr>
+							<td>Price per m<sup>2</sup></td>
+							<td>8593.75</td>
+						</tr>
+						<tr>
+							<td>Lowest Price</td>
+							<td>5658</td>
+						</tr>
+						<tr>
+							<td>Average Price</td>
+							<td>7545</td>
+						</tr>
+						<tr>
+							<td>Highest Price</td>
+							<td>11317</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
 	<script type="text/javascript" src="/js/main.js"></script>
 </body>
 </html>

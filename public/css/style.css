@@ -1,0 +1,11 @@
+body > .ui.container {
+	margin-top: 3em;
+}
+
+.ui.action.left.icon.input {
+	width: 100%;
+}
+
+body {
+	background-color: #ccc;
+}
