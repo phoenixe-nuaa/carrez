@@ -4,6 +4,9 @@
   "description": "> node.js workshop based on real estate",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.14.2",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
     "jquery": "^2.2.0",
     "jsdom": "^8.0.0"
   },
