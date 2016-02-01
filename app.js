@@ -38,13 +38,36 @@ app.post('/ajax', function (req, res) {
 	// return;
 
 	leboncoin(url, function (err, data) {
-		meilleursagents(data, function (err, data) {
-			var result = {
-				status: "success",
-				result: data
+		if(err != null) {
+			data = {
+				status: "error",
+				error: ""
 			}
-			res.json(result);
-		});
+			if(err.code == "ETIMEDOUT") {
+				data.error = "Connect timed out. Is your URL correct?"
+			}
+			else {
+				data.error = "Something goes wrong."
+			}
+			res.json(data);
+		}
+		else {
+			meilleursagents(data, function (err, data) {
+				if(err == null && data.type != "") {
+					var result = {
+						status: "success",
+						result: data
+					}
+					res.json(result);
+				}
+				else {
+					res.json({
+						status: "error", 
+						error: "URL invalid, please check your URL."
+					})
+				}
+			});
+		}
 	});
 });
 

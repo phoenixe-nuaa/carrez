@@ -1,12 +1,13 @@
 $("#compute").click(function () {
 	(function init() {
-		$("#compute").addClass("loading");
 		$("#result").fadeOut();
-		$("#answer").removeClass("green");
-		$("#values").removeClass("green");
-		$("#answer").removeClass("yellow");
-		$("#values").removeClass("yellow");
-	}());
+		setTimeout(function () {
+			$("#values").show();
+		}, 1000);
+		$("#compute").addClass("loading");
+		$("#answer").removeClass("green yellow red");
+		$("#values").removeClass("green yellow");
+	})();
 
 	var post_url = $("#url").val();
 	$.post('./ajax', {
@@ -49,6 +50,13 @@ $("#compute").click(function () {
 				$("#compute").removeClass("red");
 				$("#compute").text("Evaluate");
 			}, 3000);
+
+			if(data.status == "error") {
+				$("#answer").addClass("red");
+				$("#answer").text(data.error);
+				$("#values").hide();
+				$("#result").fadeIn();
+			}
 		}
 	});
 });
