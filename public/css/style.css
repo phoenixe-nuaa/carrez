@@ -1,3 +1,28 @@
+html {
+	overflow-y: hidden;
+}
+
+#bg {
+	background: url("/img/eiffel.jpg") bottom left;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-color: #ccc;*/
+}
+
+#overlay {
+	background: rgba(255, 255, 255, 0.1);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
 body > .ui.container {
 	margin-top: 3em;
 }
@@ -6,6 +31,10 @@ body > .ui.container {
 	width: 100%;
 }
 
-body {
-	background-color: #ccc;
+div#result {
+	opacity: 0.95;
+}
+
+h1.ui.header {
+	color: #ff0;
 }

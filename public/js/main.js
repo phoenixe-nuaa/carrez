@@ -1,9 +1,17 @@
+$(document).ready(function () {
+	var url = window.location.hash.replace("#", "");
+	if(url != "")
+		$("#url").val(url);
+});
+
 $("#compute").click(function () {
+	if($("#compute").hasClass("loading")) {
+		return;
+	}
+	
 	(function init() {
 		$("#result").fadeOut();
-		setTimeout(function () {
-			$("#values").show();
-		}, 1000);
+		$("#values").show();
 		$("#compute").addClass("loading");
 		$("#answer").removeClass("green yellow red");
 		$("#values").removeClass("green yellow");
